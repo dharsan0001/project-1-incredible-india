@@ -1,0 +1,212 @@
+
+/* STEP 1: Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STEP 2: Basic website styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* STEP 3: Header */
+.header {
+    background-color: #173f35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header nav {
+    margin-top: 15px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+/* STEP 4: Hero section */
+.hero {
+    background-color: #e8d5b5;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* STEP 5: Destinations section */
+.destinations {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.destinations > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* STEP 8: CSS Grid Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "heading heading heading"
+        "feature feature .";
+    gap: 20px;
+}
+
+/* Named grid areas */
+.gallery-title {
+    grid-area: heading;
+    text-align: center;
+    padding: 20px;
+}
+
+.card.featured {
+    grid-area: feature;
+}
+
+
+/* Destination cards */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    padding: 12px 15px 5px;
+}
+
+.card p {
+    padding: 0 15px 15px;
+}
+
+
+/* STEP 6: About section */
+.about {
+    background-color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+/* STEP 7: Footer */
+.footer {
+    background-color: #173f35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Destination images */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* STEP 9: Featured destination */
+.card.featured {
+    grid-column: span 2;
+}
+
+/* STEP 10: Tablet Responsive Design */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "heading heading"
+            "feature feature";
+    }
+}
+
+/* STEP 11: Mobile Responsive Design */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "heading"
+            "feature";
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header nav a {
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .destinations {
+        width: 95%;
+    }
+}
+
+/* STEP 12: Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Keep destination images consistent */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+/* STEP 13: Flexible typography */
+.header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.hero h2 {
+    font-size: clamp(1.5rem, 4vw, 2.8rem);
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+/* STEP 14: Responsive navigation */
+.header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header nav a {
+    padding: 5px 8px;
+}
+
+.header nav a:hover {
+    color: #ffd166;
+}

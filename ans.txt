@@ -1,0 +1,145 @@
+
+HACKGENIX - DAY 5 & DAY 6
+CSS GRID, RESPONSIVE DESIGN, GIT & GITHUB
+
+Student Name: Dharsan Mathiyalagan
+Project: Incredible India Travel Gallery
+
+========================================
+DAY 5 - CSS GRID & RESPONSIVE DESIGN
+========================================
+
+SECTION 1 - MINI QUIZ
+
+1. Which property turns an element into a grid container?
+Answer: display: grid;
+Explanation: It converts an element into a CSS Grid container.
+
+2. What does grid-template-columns: repeat(4, 1fr) create?
+Answer: Four equal columns.
+Explanation: repeat(4, 1fr) creates four columns with equal available space.
+
+3. Write the media query for screens 768px wide or narrower.
+Answer:
+@media (max-width: 768px) {
+    /* Responsive CSS */
+}
+
+Explanation: This applies CSS when the viewport width is 768px or less.
+
+4. How many pixels is 1.5rem if the root size is 16px?
+Answer: 24px.
+Explanation: 1.5 × 16 = 24px.
+
+5. Which unit means 1% of the viewport height?
+Answer: vh.
+Explanation: 1vh is 1% of the viewport height.
+
+6. How do you make an item cover two columns?
+Answer: grid-column: span 2;
+Explanation: It makes a grid item occupy two columns.
+
+7. Which command creates and switches to a new branch in one step?
+Answer: git checkout -b branch-name
+Explanation: It creates a branch and switches to it.
+
+8. Which command uploads your commits to GitHub for the first time on main?
+Answer: git push -u origin main
+Explanation: It uploads the main branch and sets the upstream branch.
+
+9. Which command brings GitHub changes to your computer?
+Answer: git pull
+Explanation: It downloads and integrates remote changes.
+
+10. Which file is displayed on the front page of a GitHub repository?
+Answer: README.md
+Explanation: It describes the project and explains how to use it.
+
+========================================
+SECTION 2 - INTERVIEW QUICK QUESTIONS
+========================================
+
+1. What is the difference between CSS Grid and Flexbox?
+
+Answer:
+CSS Grid is two-dimensional. It manages rows and columns.
+Flexbox is one-dimensional. It manages a row or a column.
+
+2. What does 1fr mean in CSS Grid?
+
+Answer:
+1fr means one fraction of the available free space in the grid container.
+
+3. What does repeat(auto-fit, minmax(200px, 1fr)) do?
+
+Answer:
+It automatically creates as many columns of at least 200px
+as can fit in the available space. The columns expand to
+fill the available row.
+
+4. What is the difference between auto-fit and auto-fill?
+
+Answer:
+auto-fit stretches available columns to fill the row.
+auto-fill keeps empty column spaces when there are not
+enough items.
+
+5. What is a media query?
+
+Answer:
+A media query applies CSS rules only when a specified
+condition, such as screen width, is true.
+
+6. What is mobile-first design?
+
+Answer:
+Mobile-first means writing CSS for mobile screens first
+and then using min-width media queries for larger screens.
+
+7. What is the difference between rem and em?
+
+Answer:
+rem depends on the root HTML font size.
+em depends on the font size of its parent or element.
+
+8. Why is the viewport meta tag required?
+
+Answer:
+It tells mobile browsers to use the device's actual
+screen width instead of pretending the page is about 980px wide.
+
+9. What is the difference between Git and GitHub?
+
+Answer:
+Git is a version control tool installed on a computer.
+GitHub is an online platform used to store and share Git repositories.
+
+10. What is the difference between git add and git commit?
+
+Answer:
+git add moves changed files into the staging area.
+git commit saves those staged changes in the repository history.
+
+11. What is the difference between git push and git pull?
+
+Answer:
+git push uploads local commits to the remote repository.
+git pull downloads and integrates changes from the remote repository.
+
+12. Why do we use branches in Git?
+
+Answer:
+Branches allow developers to work on new features or fixes
+without directly changing the main branch.
+
+13. What is origin in Git?
+
+Answer:
+origin is the default nickname given to a remote repository URL.
+
+14. Why do we write a README file?
+
+Answer:
+README.md explains the project, its features, technologies
+and instructions for running it. It is usually displayed
+on the front page of a GitHub repository.
